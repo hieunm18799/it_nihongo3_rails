@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2020_11_21_142829) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
-    t.integer "number_of_pages"
+    t.integer "number̲of̲pages"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
