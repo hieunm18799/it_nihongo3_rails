@@ -6,9 +6,14 @@
 </p>
 
 <p>
-  <strong>Number̲of̲pages:</strong>
+  <strong>Number of pages:</strong>
   <%= @book.number̲of̲pages %>
 </p>
 
+<p>
+  <% if @book.image.attached? %>
+    <%= image_tag @book.image %>
+  <% end %>
+</p>
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

@@ -14,7 +14,7 @@ class BooksTest < ApplicationSystemTestCase
     visit books_url
     click_on "New Book"
 
-    fill_in "Number̲of̲pages", with: @book.number̲of̲pages
+    fill_in "Number̲of̲pages", with: @book.number_of_pages
     fill_in "Title", with: @book.title
     click_on "Create Book"
 
@@ -26,7 +26,7 @@ class BooksTest < ApplicationSystemTestCase
     visit books_url
     click_on "Edit", match: :first
 
-    fill_in "Number̲of̲pages", with: @book.number̲of̲pages
+    fill_in "Number̲of̲pages", with: @book.number_of_pages
     fill_in "Title", with: @book.title
     click_on "Update Book"
 
