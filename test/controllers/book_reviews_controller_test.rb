@@ -17,7 +17,7 @@ class BookReviewsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create book_review" do
     assert_difference('BookReview.count') do
-      post book_reviews_url, params: { book_review: { book̲id: @book_review.book̲id, review: @book_review.review, user̲id: @book_review.user̲id } }
+      post book_reviews_url, params: { book_review: { book_id: @book_review.book_id, review: @book_review.review, user_id: @book_review.user_id } }
     end
 
     assert_redirected_to book_review_url(BookReview.last)
@@ -34,7 +34,7 @@ class BookReviewsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update book_review" do
-    patch book_review_url(@book_review), params: { book_review: { book̲id: @book_review.book̲id, review: @book_review.review, user̲id: @book_review.user̲id } }
+    patch book_review_url(@book_review), params: { book_review: { book_id: @book_review.book_id, review: @book_review.review, user_id: @book_review.user_id } }
     assert_redirected_to book_review_url(@book_review)
   end
 

@@ -14,9 +14,9 @@ class BookReviewsTest < ApplicationSystemTestCase
     visit book_reviews_url
     click_on "New Book Review"
 
-    fill_in "Book̲id", with: @book_review.book̲id
+    fill_in "Book_id", with: @book_review.book_id
     fill_in "Review", with: @book_review.review
-    fill_in "User̲id", with: @book_review.user̲id
+    fill_in "User_id", with: @book_review.user_id
     click_on "Create Book review"
 
     assert_text "Book review was successfully created"
@@ -27,9 +27,9 @@ class BookReviewsTest < ApplicationSystemTestCase
     visit book_reviews_url
     click_on "Edit", match: :first
 
-    fill_in "Book̲id", with: @book_review.book̲id
+    fill_in "Book_id", with: @book_review.book_id
     fill_in "Review", with: @book_review.review
-    fill_in "User̲id", with: @book_review.user̲id
+    fill_in "User_id", with: @book_review.user_id
     click_on "Update Book review"
 
     assert_text "Book review was successfully updated"

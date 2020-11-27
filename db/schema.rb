@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 2020_11_25_024443) do
   end
 
   create_table "book_reviews", force: :cascade do |t|
-    t.integer "user̲id"
-    t.integer "book̲id"
+    t.integer "user_id"
+    t.integer "book_id"
     t.text "review"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2020_11_25_024443) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
-    t.integer "number̲of̲pages"
+    t.integer "number_of_pages"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "detail"
